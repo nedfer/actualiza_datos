@@ -69,16 +69,6 @@
         }
     </style>
 
-<script>
-  function cerrarFormulario() {
-      // Cerrar la pestaña donde está el formulario, PERO solo después de enviar
-      setTimeout(() => {
-          window.open('', '_self'); 
-          window.close(); 
-      }, 500);
-  }
-</script>
-
 </head>
 <body>
 
@@ -88,9 +78,7 @@
 
     <!-- FORMULARIO CORREGIDO PARA GOOGLE APPS SCRIPT -->
     <form method="POST" 
-       
-          action="https://script.google.com/macros/s/AKfycbyGMalpHc5FVP6hr2f9nHLjVHjnp2oYhntA1tkx2ZZh5S0apW5jQl41c1o0lHbhUkglrA/exec"
-          onsubmit="cerrarFormulario()">
+          action="https://script.google.com/macros/s/AKfycbyGMalpHc5FVP6hr2f9nHLjVHjnp2oYhntA1tkx2ZZh5S0apW5jQl41c1o0lHbhUkglrA/exec">
 
         <label for="nombres">Nombres:</label>
         <input type="text" id="nombres" name="nombres" required>
@@ -125,8 +113,10 @@
             <option value="otro">Otro</option>
             <option value="prefiero_no_decir">Prefiero no decir</option>
         </select>
+
         <label for="empresa">Nombre de la Empresa:</label>
         <input type="text" id="empresa" name="empresa">
+
         <label for="rango_salarial">Rango Salarial:</label>
         <select id="rango_salarial" name="rango_salarial">
             <option value="">Seleccione...</option>
@@ -136,19 +126,19 @@
             <option value="5sm_10sm">$7.115.000 - $14.230.000</option>
             <option value="mas_10sm">Más de $14.230.000</option>
         </select>
+
         <label for="cargo">Cargo actual:</label>
         <input type="text" id="cargo" name="cargo">
+
         <label for="jefe">Nombre del Jefe Inmediato:</label>
         <input type="text" id="jefe" name="jefe">
+
         <button type="submit">Enviar</button>
     </form>
+
     <footer>
         © 2025 CAFAM - Todos los derechos reservados
     </footer>
+
 </body>
 </html>
-
-
-
-
-
