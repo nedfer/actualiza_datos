@@ -68,6 +68,17 @@
             color: #666;
         }
     </style>
+
+<script>
+  function cerrarFormulario() {
+      // Cerrar la pestaña donde está el formulario, PERO solo después de enviar
+      setTimeout(() => {
+          window.open('', '_self'); 
+          window.close(); 
+      }, 500);
+  }
+</script>
+
 </head>
 <body>
 
@@ -136,6 +147,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
